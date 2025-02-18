@@ -1,0 +1,36 @@
+.video-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  max-width: 400px;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
+}
+
+.thumbnail-view img {
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail-view h3 {
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.thumbnail-view p {
+  padding: 0 10px 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.error {
+  color: red;
+  padding: 20px;
+  text-align: center;
+}
