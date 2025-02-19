@@ -18,9 +18,16 @@ app.use(express.json());
 app.use(cors());
 app.use('/api/auth', authRoutes);
 
-app.get("/", (req, res) => {
-  res.send("YouTube Clone API is running!");
+// app.get("/", (req, res) => {
+//   res.send("YouTube Clone API is running!");
+// });
+
+app.get("/api/test", (req, res) => {
+  res.json({ message: "Backend is working!" });
 });
+
+app.listen(3000, () => console.log("Server running on port 3000"));
+
 
 // Import Routes
 import userRoutes from "./routes/userRoutes.js";
