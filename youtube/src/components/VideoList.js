@@ -6,6 +6,8 @@ const VideoList = () => {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const API_URL = process.env.REACT_APP_API_URL || 'https://youtube-sh19.vercel.app/';
+
 
   useEffect(() => {
     fetchVideos();
