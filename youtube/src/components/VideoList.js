@@ -13,7 +13,7 @@ const VideoList = () => {
 
   const fetchVideos = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/videos");
+      const response = await fetch("https://your-vercel-backend.vercel.app/api/videos");
       if (!response.ok) {
         throw new Error('Failed to fetch videos');
       }
