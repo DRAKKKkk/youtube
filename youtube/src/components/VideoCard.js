@@ -14,7 +14,7 @@ const VideoCard = ({ video }) => {
   return (
     <div className="video-card" onClick={() => setShowIframe(true)}>
       {/* Show the video thumbnail by default */}
-      {!showIframe ? (}
+      {!showIframe ? (
       <h3>{video.title}</h3>
       <p>{video.description}</p>
       <iframe
