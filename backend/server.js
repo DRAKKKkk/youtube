@@ -35,7 +35,7 @@ app.get("/api/test", (req, res) => {
   res.json({ message: "Backend is working!" });
 });
 
-app.listen(3000, () => console.log("Server running on port 3000"));
+// app.listen(3000, () => console.log("Server running on port 3000"));
 
 
 // Import Routes
